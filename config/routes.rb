@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-  get 'welcome/home', to:'welcome#home' # get to 'welcome' controller and get 'home'
+  root 'welcome#home' # get to 'welcome' controller and get 'home'
   get 'welcome/about', to:'welcome#about'
   
   resources :articles
